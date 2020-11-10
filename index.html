@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Swagat Swain">
+    <title>Document- Title</title>
+
 </head>
 
 <body>
-    Hello WOrld.
-    Hello WOrld 2
+
+    <!-- HTML Forms -->
+    <form action="server.php" method="POST" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name</label><br>
+            <input type="text" name="firstName" id="firstName"><br>
+            <label for="lastName">Last Name</label><br>
+            <input type="text" name="lastName" id="lastName">
+            <br>
+            Email : <br>
+            <input type="email" name="emailAddress">
+            <br>
+            <br>
+
+            Gender:<br>
+            <input type="radio" value="male" name="gender">Male
+            <input type="radio" value="female" name="gender">Female
+            <br>
+
+            Courses:<br>
+            <input type="checkbox" value="Data Science" name="courses">Data Science<br />
+            <input type="checkbox" value="Algorithms" name="courses">Algorithms<br />
+            <input type="checkbox" value="C#" name="courses">C#<br />
+            <br>
+
+            State:<br>
+            <select name="state" multiple>
+                <option value="Delhi">Delhi</option>
+                <option value="Odisha">Odisha</option>
+                <option value="WB">WB</option>
+            </select><br>
+            <br><br>
+            <br>
+            Upload Resume
+            <input type="file" name="resume">
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+
 </body>
 
 </html>
